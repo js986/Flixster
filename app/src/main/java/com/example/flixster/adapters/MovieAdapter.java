@@ -94,6 +94,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
             Glide.with(context)
                     .load(imgUrl)
                     .transform(new RoundedCornersTransformation(radius,margin))
+                    .placeholder(R.drawable.ic_launcher_background)
                     .into(ivPoster);
             // 1) Register click listener on the whole row
             // 2) Navigate to a new activity
